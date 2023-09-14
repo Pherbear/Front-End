@@ -27,9 +27,7 @@
     40%{opacity: 1;}
     100%{opacity: 0;}
 }
-@media only screen and (max-width: 600px){
 
-}
 @keyframes intromove {
     25% {
         left: 320px; 
@@ -53,6 +51,31 @@
         font-size: 0px;
     }
 }
+
+@keyframes intromove-mobile {
+    25% {
+        left: 100px; 
+        top: 0px;
+    }
+    50% {
+        left: 100px;
+        top: 600px;
+        font-size: 20px;
+    }
+    95%{
+        opacity: 1;
+        width: 200px;
+        font-size: 0px;        
+    }
+    100%{
+        left: 100px;
+        top: 900px;
+        width: 0;
+        height: 0;
+        font-size: 0px;
+    }
+}
+
 
 .header{
     background: blue;
@@ -144,6 +167,7 @@ ul {
 }
 @media only screen and (max-width: 600px) {
     .intro{
+        animation: intromove-mobile 10s;
         font-size: 20px;
         width: 200px;
     }
@@ -178,4 +202,5 @@ ul {
     .footer-item{
         font-size: 25px;
     }
+    
 }
