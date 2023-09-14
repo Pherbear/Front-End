@@ -202,5 +202,8 @@ ul {
     .footer-item{
         font-size: 25px;
     }
+    .blur{
+        height: 125%;
+    }
     
 }
