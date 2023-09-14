@@ -1,0 +1,118 @@
+.download{
+    position: relative;
+    width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.console{
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    width: 90%;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    display: flex;
+    flex-flow: column;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.console .top-bar{
+    background: grey;
+}
+.console .top-bar .title{
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 16px;
+}
+.console .top-bar .options ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 15px;
+}
+.console .top-bar .options li{
+    display: block;
+    position: relative;
+    float: left;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+.console .top-bar .options li:hover{
+    background: rgb(216, 207, 207);
+    color: white;
+}
+.console .text{
+    background: rgb(74, 20, 46);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    height: 100%;
+}
+.console .text .bash{
+    display: flex;
+    flex-direction: row;
+}
+.console .text .bash .user{
+    color: green;
+}
+.console .text .bash .dir{
+    color: blue;
+}  
+.console .text .output{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+@keyframes flash {
+    0%{background: none;}
+    49%{background: none;}
+    50%{background: white;}
+    100%{background: white;}
+}
+
+.console .text .output .block{
+    animation: flash 1s infinite;
+    position: relative;
+    background: white;
+    width: 10px;
+    top: 5%;
+    height: 95%;
+}
+.bad{
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+}
+.bad:hover{
+    animation: spin 2s;
+}
+
+@keyframes spin {
+    to{
+        background: red;
+        transform: rotate(0deg);
+    }  
+    from{
+        background: none;
+        transform: rotate(360deg);
+    }
+}
+.list{
+
+}
+.image{
+
+}
+.letter{
+
+}
+.code{
+
+}
